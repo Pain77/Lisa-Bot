@@ -49,7 +49,7 @@ after start it you need to scan the qr
 #### Session name is optional
 ### Contact me
 
-- [INSTAGRAM](https://t.me/Dulara_Gimhan_Xd)
+- [INSTAGRAM](https://instagram.com/on11._.sama)
 - [WHATSAPP](http://wa.me/+919662713165)
 
 
