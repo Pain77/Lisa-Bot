@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://tenor.com/view/lisa-cute-smile-lisa-blackpink-blackpink-lisa-gif-17737053" border="0"></a>
+  <img src="https://c.tenor.com/XVLRX-3bx6MAAAAC/lisa-cute.gif" border="0"></a>
 
 <div align="center">
 <img alt="GitHub" src="https://img.shields.io/badge/LISA%20BOT-25D32?style=for-the-badge&logoColor=darkgreen"/>
