@@ -21,8 +21,8 @@
 ### Install ⬇️
 
 ```bash
-> git clone https://github.com/Dularazero/Lisa
-> cd Lisa
+> git clone https://github.com/Pain77/Lisa-Bot
+> cd Lisa-Bot
 > npm i
 ```
 ### Deploy
@@ -36,7 +36,6 @@ https://heroku.com/deploy
 ```
 
 #### Change `config.json` 
-##### Register in <b>[zeks.xyz](https://zeks.xyz)</b> to get apiKey then enter to zeksKey in `config.json`
 ### Start ✅
 
 ```bash
@@ -46,8 +45,8 @@ after start it you need to scan the qr
 #### Session name is optional
 ### Contact me
 
-- [TELEGRAM](https://t.me/Dulara_Gimhan_Xd)
-- [WHATSAPP](http://wa.me/+94711392491)
+- [INSTAGRAM](https://t.me/Dulara_Gimhan_Xd)
+- [WHATSAPP](http://wa.me/+919662713165)
 
 
 
