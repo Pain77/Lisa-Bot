@@ -5,6 +5,9 @@
 <div align="center">
 <img alt="GitHub" src="https://img.shields.io/badge/LISA%20BOT-25D32?style=for-the-badge&logoColor=darkgreen"/>
 <br><br>
+  <p align="center">
+  <a href="https://github.com/Pain77"><img title="Author" src="https://img.shields.io/badge/Author-P-A-I-N-blue.svg?style=for-the-badge&logo=github" /></a>
+</p>
   
 > A Lisa bot made using adiwajshing/Baileys library
  <p>
@@ -51,7 +54,7 @@ after start it you need to scan the qr
 ### Contact me
 
 <p align="center">
-<a href="https://api.whatsapp.com/send?phone=919662713165&text=♨️+ʟɪꜰᴇ ꜱᴜᴄᴋꜱ™" target="_blank"><img src="https://img.shields.io/badge/Whatsapp-%808080.svg?&style=flat-square&logo=Whatsapp&logoColor=white" alt="WhatsApp"><br>
+<a href="https://api.whatsapp.com/send?phone=919662713165&text=♨️+ʟɪꜰᴇ ꜱᴜᴄᴋꜱ™" target="_blank"><img src="https://img.shields.io/badge/Whatsapp-%808080.svg?&style=for-the-badge&logo=Whatsapp&logoColor=white" alt="WhatsApp"><br>
 <a href="https://instagram.com/on11._.sama"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/><br>
 </p>
 
