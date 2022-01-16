@@ -13,7 +13,7 @@
   ],
   "website": "https://github.com/Pain77/Lisa-Bot#readme",
   "repository": "https://github.com/Pain77/Lisa-Bot.git",
-  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZKE187nAqYc9lw4tKNM2_wk39XDo6UTkhA&usqp=CAU",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_VPoq9U6GdE-TgT_AvpZjzlzaN4FfWEgeRw&usqp=CAU",
   "success_url": "/",
   "env": {
       "PREFIX": {
