@@ -7,7 +7,7 @@
 <br><br>
   
 <p align="center">
-  <a href="https://github.com/Pain77"><img title="Author" src="https://img.shields.io/badge/Author-P-A-I-N-blue.svg?style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/Pain77"><img title="Author" src="https://img.shields.io/badge/Author-P--A--I--N-blue.svg?style=for-the-badge&logo=github" /></a>
 </p>
   
 > A Lisa bot made using adiwajshing/Baileys library
