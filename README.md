@@ -50,10 +50,9 @@ after start it you need to scan the qr
 #### Session name is optional
 ### Contact me
 
-- [INSTAGRAM](https://instagram.com/on11._.sama)
-- [WHATSAPP](http://wa.me/+919662713165)
-
-
+<p align="center">
+<a href="https://api.whatsapp.com/send?phone=919662713165&text=♨️+ʟɪꜰᴇ ꜱᴜᴄᴋꜱ™" target="_blank"><img src="https://img.shields.io/badge/Whatsapp-%808080.svg?&style=flat-square&logo=Whatsapp&logoColor=white" alt="WhatsApp"></a>
+</p>
 
 ##  Special thanks to
 * <a href="https://github.com/adiwajshing/Baileys"><img alt="GitHub" src="https://img.shields.io/badge/@adiwajshing/Baileys%20-%23121011.svg?style=flat-square&logo=npm&color=white"/></a>
