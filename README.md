@@ -30,7 +30,8 @@
 > npm i
 ```
 ### Deploy
-https://heroku.com/deploy
+  
+  [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Pain77/Lisa-Bot/blob/main)
 
 ### For termux users before running the above command write this command
 ```bash
