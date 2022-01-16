@@ -55,5 +55,5 @@ after start it you need to scan the qr
 
 
 
-##  Special Thanks to
+##  Special thanks to
 * <a href="https://github.com/adiwajshing/Baileys"><img alt="GitHub" src="https://img.shields.io/badge/@adiwajshing/Baileys%20-%23121011.svg?style=flat-square&logo=npm&color=white"/></a>
