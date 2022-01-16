@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://c.tenor.com/XVLRX-3bx6MAAAAC/lisa-cute.gif" border="0"></a>
+  <img src="https://c.tenor.com/Hr1IdMzL6tIAAAAC/badass-girl-lalisa.gif" border="0"></a>
 
 <div align="center">
 <img alt="GitHub" src="https://img.shields.io/badge/LISA%20BOT-25D32?style=for-the-badge&logoColor=darkgreen"/>
