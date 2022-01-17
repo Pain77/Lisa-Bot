@@ -28,7 +28,7 @@ export default class Command extends BaseCommand {
         const audio = new YT(videos[0].url, 'audio')
         if (!audio.url) return
         M.reply('_*Loading…
-█▒▒▒▒▒▒▒▒▒*_')
+                █▒▒▒▒▒▒▒▒▒*_')
        
         this.client
             .sendMessage(M.from, await audio.getBuffer(), MessageType.audio, {
