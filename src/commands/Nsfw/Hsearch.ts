@@ -21,9 +21,9 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
         if (!joined) return void (await M.reply(`Give me the hentai tittle 🐱`))
-        const chitoge = joined.trim()
-        console.log(chitoge)
-        const { data } = await axios.get(`https://velgrynd.herokuapp.com/api/nhentai?code=${chitoge}`)
+        const lisa = joined.trim()
+        console.log(lisa)
+        const { data } = await axios.get(`https://velgrynd.herokuapp.com/api/nhentai?code=${lisa}`)
         if ( !(await this.client.getGroupData(M.from)).nsfw)
             return void M.reply(
                 `This is not a NSFW group, Type !act nsfw to enable it 🎈`
