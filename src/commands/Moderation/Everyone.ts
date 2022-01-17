@@ -37,7 +37,7 @@ export default class Command extends BaseCommand {
 		if (term[0] === "--s" || term[0] === "--sticker") {
 			const sticker: any = await new Sticker(random, {
 				pack: "READ QUOTED MESSAGE",
-				author: "Zero Two",
+				author: "Lisa",
 				quality: 90,
 				type: "default",
 				categories: ["🎊"],
