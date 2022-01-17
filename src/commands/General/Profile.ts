@@ -31,7 +31,7 @@ export default class Command extends BaseCommand {
         } catch (err) {
             M.reply(`Profile Picture not Accessible of ${username}`)
             pfp =
-                'https://i.pinimg.com/736x/e2/f4/21/e2f421f5ba0c6b93b23aaa5530c2e613.jpg'
+                'https://i.pinimg.com/736x/8a/b6/f8/8ab6f8666f15c3d2a879e3cfd9af51f1.jpg'
         }
         const exp = (await this.client.getUser(user)).Xp
         let role: string;
@@ -82,7 +82,7 @@ export default class Command extends BaseCommand {
         await M.reply(
             await request.buffer(
                 pfp ||
-                    'https://i.pinimg.com/736x/e2/f4/21/e2f421f5ba0c6b93b23aaa5530c2e613.jpg'
+                    'https://i.pinimg.com/736x/8a/b6/f8/8ab6f8666f15c3d2a879e3cfd9af51f1.jpg'
             ),
             MessageType.image,
             undefined,
