@@ -29,8 +29,7 @@ export default class Command extends BaseCommand {
                 videos[i].author.name
             }\n⏳ *Duration:* ${videos[i].duration}\n💸 *URL:* ${videos[i].url}\n\n`
         }
-        M.reply('_*Loading…
-                █▒▒▒▒▒▒▒▒▒*_')
+        M.reply('_*︵‿୨♡𝓛𝓸𝓪𝓭𝓲𝓷𝓰♡୧‿︵*_')
         this.client
             .sendMessage(M.from, text, MessageType.extendedText, {
                 quoted: M.WAMessage,
