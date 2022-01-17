@@ -24,9 +24,9 @@ export default class Command extends BaseCommand {
 	): Promise<void> => {
 		if (!joined)
 			return void (await M.reply(`Provide the term you wanna search 🐱'`));
-		const chitoge: any = joined.trim().split("|");
-		const term: string = chitoge[0];
-		const amount: number = chitoge[1];
+		const lisa: any = joined.trim().split("|");
+		const term: string = lisa[0];
+		const amount: number = lisa[1];
 		if (!amount)
 			return void M.reply(
 				`Give me how much pin you want\n\nExample: *${this.client.config.prefix}pin eren yeager|7*`
