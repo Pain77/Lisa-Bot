@@ -14,9 +14,9 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const n = [
-            './assets/audio/zerotwo.mp3'
+            './assets/audio/lisa.mp3'
         ]
-        return void this.client.sendMessage(M.from, { url: well }, MessageType.audio, {quoted:M.WAMessage,
+        return void this.client.sendMessage(M.from, { url: pain }, MessageType.audio, {quoted:M.WAMessage,
             mimetype: Mimetype.mp4Audio,
         )
     }
