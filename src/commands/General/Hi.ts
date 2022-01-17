@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `*_I'm so hungryyy! Please give me food.. some fooood _*`,
+				caption: `*_"𝙀𝙝𝙚𝙚!!" "𝙀𝙝𝙚𝙚!!" 💝_*`,
 		    }
 		);
 	};
