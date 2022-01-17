@@ -20,10 +20,10 @@ export default class Command extends BaseCommand {
     // static count = 0
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
         
-        if (!joined) return void M.reply('✖ Provide an item name to search, Baka!')
-        const chitoge = joined.trim()
-        console.log(chitoge)
-        const { data } = await axios.get(`https://api-xcoders.xyz/api/info/trend/youtube?country=${chitoge}&apikey=Zl0clXuAbx`)
+        if (!joined) return void M.reply('✖ Provide an item name to search, Pabo!')
+        const lisa = joined.trim()
+        console.log(lisa)
+        const { data } = await axios.get(`https://api-xcoders.xyz/api/info/trend/youtube?country=${lisa}&apikey=Zl0clXuAbx`)
         const buffer = await request.buffer(data.result.data[0].thumbnail).catch((e) => {
             return void M.reply(e.message)
         })
