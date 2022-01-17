@@ -66,7 +66,7 @@ export default class Command extends BaseCommand {
                 : this.client.getProfilePicture(M.sender.jid))
             const sticker = new Sticker(await getImage(image), {
 							pack: `akatsuki`,
-							author: `𝒁𝒆𝒓𝒐 𝑻𝒘𝒐 🌸`,
+							author: `𝙇𝙞𝙨𝙖 🌸`,
 							type: "full",
 							categories: ["💢"],
 						});
