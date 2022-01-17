@@ -32,8 +32,8 @@ export default class Command extends BaseCommand {
 const b = data
 
         const sticker: any = await new Sticker(b, {
-			pack: "ᵈᵃʳˡⁱⁿᵍ ᵒʰᵃʸᵒ",
-			author: "ʙʏ 𝒁𝒆𝒓𝒐 𝑻𝒘𝒐 ",
+			pack: "уα∂σм",
+			author: "ʙʏ 𝙇𝙞𝙨𝙖 ",
 			quality: 90,
 			type: "crop",
 			categories: ["🎊"],
