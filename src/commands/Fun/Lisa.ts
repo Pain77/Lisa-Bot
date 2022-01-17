@@ -16,15 +16,15 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
-        if (!joined) return void M.reply('_*Annyeonghaseyo 🌸*_')
+        if (!joined) return void M.reply('_*YADOM 🌸*_')
         const lisa = joined.trim()
         await axios.get(`https://api.simsimi.net/v2/?text=${lisa}&lc=en`)
         .then((response) => {
                 // console.log(response);
-                const text = `_*Lisa:*_  ${response.data.success}`
+                const text = `_*🎐Lisa:*_  ${response.data.success}`
                 M.reply(text);
             }).catch(err => {
-                M.reply(`_*Annyeonghaseyo 🌸*_`)
+                M.reply(`_*YADOM 🌸*_`)
             }
             )
     };
