@@ -7,24 +7,24 @@ import axios from 'axios'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'zerotwo',
-            description: 'Chat with Zerotwo.',
-            aliases: ['02'],
+            command: 'lisa',
+            description: 'Chat with Lisa.',
+            aliases: ['lili'],
             category: 'fun',
-            usage: `${client.config.prefix}zerotwo (text)`
+            usage: `${client.config.prefix}lisa (text)`
         })
     }
 
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
-        if (!joined) return void M.reply('_*Darling 🌸*_')
-        const zerotwo = joined.trim()
-        await axios.get(`https://api.simsimi.net/v2/?text=${zerotwo}&lc=en`)
+        if (!joined) return void M.reply('_*Annyeonghaseyo 🌸*_')
+        const lisa = joined.trim()
+        await axios.get(`https://api.simsimi.net/v2/?text=${lisa}&lc=en`)
         .then((response) => {
                 // console.log(response);
-                const text = `_*🎈Zero Two:*_  ${response.data.success}`
+                const text = `_*Lisa:*_  ${response.data.success}`
                 M.reply(text);
             }).catch(err => {
-                M.reply(`_*Darling 🌸*_`)
+                M.reply(`_*Annyeonghaseyo 🌸*_`)
             }
             )
     };
