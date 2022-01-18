@@ -13,9 +13,9 @@ export default class Command extends BaseCommand {
 		super(client, handler, {
 			command: "candy",
 			description: `Get logo from text`,
-			aliases: ["bp"],
+			aliases: ["c"],
 			category: "logo",
-			usage: `${client.config.prefix}blackpink`,
+			usage: `${client.config.prefix}candy`,
 			baseXp: 50,
 		});
 	}
@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
 	run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
 		 if (!joined) return void (await M.reply(`Give me the text 🐱`))
         const lisa = joined.trim()
-		const pain = await w5botapi.textpro("https://textpro.me/create-blackpink-logo-style-online-1001.html",
+		const pain = await w5botapi.textpro("https://textpro.me/create-christmas-candy-cane-text-effect-1056.html",
     lisa
     );
 		const buffer = await request.buffer(pain).catch((e) => {
