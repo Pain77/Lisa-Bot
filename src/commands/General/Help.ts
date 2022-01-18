@@ -31,7 +31,7 @@ export default class Command extends BaseCommand {
 				mimetype: Mimetype.gif,
 				caption: `🎀ᴀɴɴʏᴇᴏɴɢʜᴀꜱᴇʏᴏ' !
 
-🪄 𝐇𝐞𝐲𝐚! 𝐈'𝐦 𝐋𝐢𝐬𝐚 𝐌𝐚𝐧𝐨𝐛𝐚𝐧 , 𝐞𝐧𝐣𝐨𝐲 𝐮𝐬𝐢𝐧𝐠 𝐦𝐲 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬..! 
+🪄 𝐇𝐞𝐲𝐚! 𝐈'𝐦 𝐋𝐢𝐬𝐚 𝐌𝐚𝐧𝐨𝐛𝐚𝐧 , 𝐄𝐧𝐣𝐨𝐲 𝐮𝐬𝐢𝐧𝐠 𝐦𝐲 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬..! 
 🎋 𝐇𝐞𝐫𝐞 𝐚𝐫𝐞 𝐭𝐡𝐞 𝐋𝐢𝐬𝐭𝐞𝐝 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 : -
 
 🎊 𝐅𝐔𝐍 🎊
