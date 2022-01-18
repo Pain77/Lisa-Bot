@@ -15,7 +15,7 @@
   <img src ="https://img.shields.io/badge/npm-v8.1.3-yellow" />
   <img src="https://img.shields.io/badge/node-%3E%3D15.0.2-yellow" />
    <a href="https://github.com/justpiple/whatsapp-bot/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-Yes-yellow" />
   </a>
 </p>
 
