@@ -102,7 +102,7 @@ export default class Command extends BaseCommand {
 🎶 ᴋᴀʀᴀᴏᴋᴇ
 🎶 ɪɢ
 🎶 ɪɢᴘʀ
-🎶 ᴘɪɴ
+🎶 ᴘɪɴᴛᴇʀᴇꜱᴛ
 🎶 ʏᴛᴍᴘ3
 
 📃 𝐄𝐃𝐔𝐂𝐀𝐓𝐈𝐕𝐄 📃
