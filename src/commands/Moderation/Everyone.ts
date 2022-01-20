@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
 	): Promise<void> => {
 		const term = joined.trim();
 		const gifs = [		
-			"https://c.tenor.com/XVLRX-3bx6MAAAPo/lisa-cute.mp4",
+			"https://c.tenor.com/XVLRX-3bx6MAAAPo/lisa-cute.mp4";
 		];
 
 	        const selected = gifs[Math.floor(Math.random() * gifs.length)];
