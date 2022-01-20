@@ -29,10 +29,10 @@ export default class Command extends BaseCommand {
 			return void (await M.reply(`Please provide the Broadcast Message.`));
 		const term = joined.trim();
 		const gifs = [
-			"https://c.tenor.com/4RmwOG5XXPcAAAPo/bts-v-bts-taehyung.mp4",
-			"https://c.tenor.com/OyohyIqIf6IAAAPo/%EB%B0%A9%ED%83%84-%EB%B0%A9%ED%83%84%EB%B7%94.mp4",
-			"https://c.tenor.com/N8mbDqrtfvsAAAPo/bts-bts-v.mp4",
-			"https://c.tenor.com/t51xqilj2JcAAAPo/taehyung-taehyung-harmonica.mp4",
+			"https://c.tenor.com/lq3GJ0FrmG8AAAPo/lisa-blackpink-lisa-swalla.mp4",
+			"https://c.tenor.com/OGupI21dlwYAAAPo/lalisa-money.mp4",
+			"https://c.tenor.com/T-TVk5AGH_MAAAPo/rap-blackpink.mp4",
+			"https://c.tenor.com/wy9JHWiGlZwAAAPo/girl-power-blackpink.mp4",
 		];
 		const selected = gifs[Math.floor(Math.random() * gifs.length)];
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -43,7 +43,7 @@ export default class Command extends BaseCommand {
 			.map((jids) => (jids.includes("g.us") ? jids : null))
 			.filter((v) => v);
 		for (let i = 0; i < chats.length; i++) {
-			const text = `*💫 「 TAEHYUNG BROADCAST 」 💫*\n\n${term}\n\n ʀᴇɢᴀʀᴅs ~ *${M.sender.username}*`;
+			const text = `*🥤「 Lisa Broadcast 」🥤*\n\n${term}\n\n ʀᴇɢᴀʀᴅs ~ *${M.sender.username}*`;
 			this.client.sendMessage(chats[i], { url: selected }, MessageType.video, {
 				mimetype: Mimetype.gif,
 				caption: `${text}`,
