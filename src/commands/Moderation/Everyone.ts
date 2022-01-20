@@ -28,9 +28,11 @@ export default class Command extends BaseCommand {
 			"https://c.tenor.com/XVLRX-3bx6MAAAPo/lisa-cute.mp4",
 		];
 
-	        const random = gifs[Math.floor(Math.random() * gifs.length)];
+	        const selected = gifs[Math.floor(Math.random() * gifs.length)];
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		
 		return void (await M.reply(
+			{ url: selected },
 				MessageType.video,
 				Mimetype.gif,
 				M.groupMetadata?.participants.map((user) => user.jid)
