@@ -24,8 +24,6 @@ export default class Command extends BaseCommand {
 		M: ISimplifiedMessage,
 		{ joined }: IParsedArgs
 	): Promise<void> => {
-		if (!joined)
-			return void (await M.reply(`Please provide a Message to tag.`));
 		const term = joined.trim();
 		const gifs = [		
 			"https://c.tenor.com/XVLRX-3bx6MAAAPo/lisa-cute.mp4",
@@ -33,13 +31,9 @@ export default class Command extends BaseCommand {
 
 	        const selected = gifs[Math.floor(Math.random() * gifs.length)];
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		const gif = await axios
-			.get(
-				`https://g.tenor.com/v1/search?q=${selected}&key=${this.client.config.gifApi}&limit=100`
-			)
-			.catch(() => null);
 		
-		return void (await M.reply(
+		return void this.client.sendMessage(
+			M.from,
 			{ url: selected },
 				MessageType.video,
 				Mimetype.gif,
