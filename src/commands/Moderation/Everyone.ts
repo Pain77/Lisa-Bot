@@ -20,13 +20,24 @@ export default class Command extends BaseCommand {
 		});
 	}
 
-	run = async (M: ISimplifiedMessage): Promise<void> => {
+	run = async (
+		M: ISimplifiedMessage,
+		{ joined }: IParsedArgs
+	): Promise<void> => {
+		if (!joined)
+			return void (await M.reply(`Please provide a Message to tag.`));
+		const term = joined.trim();
 		const gifs = [		
 			"https://c.tenor.com/XVLRX-3bx6MAAAPo/lisa-cute.mp4",
 		];
 
 	        const selected = gifs[Math.floor(Math.random() * gifs.length)];
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		const gif = await axios
+			.get(
+				`https://g.tenor.com/v1/search?q=${selected}&key=${this.client.config.gifApi}&limit=100`
+			)
+			.catch(() => null);
 		
 		return void (await M.reply(
 			{ url: selected },
