@@ -20,10 +20,7 @@ export default class Command extends BaseCommand {
 		});
 	}
 
-	run = async (
-		M: ISimplifiedMessage,
-		{ joined }: IParsedArgs
-	): Promise<void> => {
+	run = async (M: ISimplifiedMessage): Promise<void> => {
 		const gifs = [		
 			"https://c.tenor.com/XVLRX-3bx6MAAAPo/lisa-cute.mp4",
 		];
