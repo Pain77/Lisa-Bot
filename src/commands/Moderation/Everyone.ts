@@ -38,8 +38,7 @@ export default class Command extends BaseCommand {
 				MessageType.video,
 				Mimetype.gif,
 				M.groupMetadata?.participants.map((user) => user.jid)
-		));
-	                
+		));	                
 	} else
 		return void (await M.reply(
 				`${
