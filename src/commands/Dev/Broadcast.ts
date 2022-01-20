@@ -1,22 +1,23 @@
 /** @format */
 
+import { MessageType, Mimetype } from "@adiwajshing/baileys";
 import MessageHandler from "../../Handlers/MessageHandler";
 import BaseCommand from "../../lib/BaseCommand";
 import WAClient from "../../lib/WAClient";
 import { IParsedArgs, ISimplifiedMessage } from "../../typings";
-import { MessageType, Mimetype } from "@adiwajshing/baileys";
-import { Sticker, Categories, StickerTypes } from "wa-sticker-formatter";
 
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "everyone",
-			description: "Tags all users in group chat",
-			aliases: ["all", "tagall", "ping"],
-			category: "moderation",
-			usage: `${client.config.prefix}everyone`,
-			adminOnly: true,
-			baseXp: 20,
+			command: "broadcast",
+			description:
+				"Will make a broadcast for groups where the bot is in. Can be used to make announcements.",
+			aliases: ["bcast", "announcement", "bc"],
+			category: "dev",
+			dm: true,
+			usage: `${client.config.prefix}bc`,
+			modsOnly: true,
+			baseXp: 0,
 		});
 	}
 
@@ -24,29 +25,33 @@ export default class Command extends BaseCommand {
 		M: ISimplifiedMessage,
 		{ joined }: IParsedArgs
 	): Promise<void> => {
-		const gifs = [		
-			"https://c.tenor.com/XVLRX-3bx6MAAAPo/lisa-cute.mp4",
+		if (!joined)
+			return void (await M.reply(`Please provide the Broadcast Message.`));
+		const term = joined.trim();
+		const gifs = [
+			"https://c.tenor.com/4RmwOG5XXPcAAAPo/bts-v-bts-taehyung.mp4",
+			"https://c.tenor.com/OyohyIqIf6IAAAPo/%EB%B0%A9%ED%83%84-%EB%B0%A9%ED%83%84%EB%B7%94.mp4",
+			"https://c.tenor.com/N8mbDqrtfvsAAAPo/bts-bts-v.mp4",
+			"https://c.tenor.com/t51xqilj2JcAAAPo/taehyung-taehyung-harmonica.mp4",
 		];
-
-	        const random = gifs[Math.floor(Math.random() * gifs.length)];
-		
-		return void (await M.reply(
-				MessageType.video,
-				Mimetype.gif,
-				M.groupMetadata?.participants.map((user) => user.jid)
-		));
-	                
-	} else
-		return void (await M.reply(
-				`${
-					M.groupMetadata?.subject || "*EVERYONE*"
-				}\n*READ QUOTED MESSAGE*\n*[TAGGED MAGICALLY]*`,
-				undefined,
-				undefined,
-				M.groupMetadata?.participants.map((user) => user.jid)
-				// eslint-disable-next-line @typescript-eslint/no-explicit-any
-			).catch((reason: any) =>
-				M.reply(`✖️ An error occurred, Reason: ${reason}`)
-			));
-	        };
+		const selected = gifs[Math.floor(Math.random() * gifs.length)];
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		const chats: any = this.client.chats
+			.all()
+			.filter((v) => !v.read_only && !v.archive)
+			.map((v) => v.jid)
+			.map((jids) => (jids.includes("g.us") ? jids : null))
+			.filter((v) => v);
+		for (let i = 0; i < chats.length; i++) {
+			const text = `*💫 「 TAEHYUNG BROADCAST 」 💫*\n\n${term}\n\n ʀᴇɢᴀʀᴅs ~ *${M.sender.username}*`;
+			this.client.sendMessage(chats[i], { url: selected }, MessageType.video, {
+				mimetype: Mimetype.gif,
+				caption: `${text}`,
+				contextInfo: {
+					mentionedJid: M.groupMetadata?.participants.map((user) => user.jid),
+				},
+			});
+		}
+		await M.reply(`✅ Broadcast Message sent to *${chats.length} groups*.`);
+	};
 }
