@@ -17,6 +17,9 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
+        const n = [
+            './assets/nino-mean.mp4'
+        ]
 
 await this.client.sendMessage( M.sender.jid,`*LISA'S SUPPORT GROUP 🌸*
 
